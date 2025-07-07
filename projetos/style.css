@@ -35,6 +35,7 @@ body {
   /*SHORT READ OU ATALHO*/
   /*background color image repeat position size */
   background: var(--bg-url)  /*url(./assets/bg-mobile.jpg)*/ no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -193,4 +194,19 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* media queries */
+/*
+Só funcio o @media com a linha abaixo declarada na head do index.html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
